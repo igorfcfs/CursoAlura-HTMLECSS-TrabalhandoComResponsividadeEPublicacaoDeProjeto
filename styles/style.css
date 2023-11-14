@@ -35,6 +35,7 @@ body {
     flex-direction: row;/*padrao*/
     align-items: center;
     justify-content: space-between;
+    gap: 82px; /* espacamento entre imagem e texto */
 }
 .apresentacao__conteudo {
     width: 50%;
@@ -118,4 +119,16 @@ body {
     size: 24px;
     color: var(--cor-terciaria);
     text-decoration: none;
+}
+
+@media(max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
